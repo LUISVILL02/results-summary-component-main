@@ -27,8 +27,8 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/LUISVILL02/results-summary-component-main)
+- Live Site URL: [Add live site URL here](https://luisvill02.github.io/results-summary-component-main/)
 
 ## My process
 
@@ -44,16 +44,17 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 
 Aprendi a trabajar con fechas e inputs.
 
-``` const dayInput = document.getElementById("day");
+```JS
+   const dayInput = document.getElementById("day");
     const mountInput = document.getElementById("mounth");
     const yearInput = document.getElementById("year");
 
     const fecha = new Date(yearInput.value, mountInput.value-1, dayInput.value);
     const fechaActual = new Date();
-    ``` 
+``` 
 
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Mentor de interfaz - [ @ LUISVILL02 ] ( https://www.frontendmentor.io/profile/LUISVILL02)
 
