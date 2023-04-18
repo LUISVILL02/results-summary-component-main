@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,200;1,800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    background: hsl(0, 0%, 86%);
+}
+
+main{
+    background: white;
+    display: grid;
+    grid-template-rows: max-content;
+    border-radius: 20px 20px 200px 20px;
+    padding: 50px;
+    width: 55%;
+    height: 80%;
+    position: relative;
+}
+form{
+    display: flex;
+    column-gap: 40px;
+    padding-bottom: 30px;
+}
+.campos{
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+}
+button{
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    background: #854dff;
+}
+button:hover{
+    background: #141414;
+}
+
+hr{
+    width: 90%;
+    align-self: center;
+    height: 1px;
+    background-color: hsl(0, 0%, 86%);
+}
+label{
+    color: hsl(0, 1%, 44%);
+}
+.validate{
+    color: hsl(0, 100%, 67%);
+    font-weight: 100;
+    font-size: 12px;
+}
+.input{
+    height: 50px;
+    width: 140px;
+    padding: 20px 10px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 1px solid hsl(0, 0%, 86%);
+    color: #141414;
+    font-weight: 800;
+    outline: none;
+}
+.input::-webkit-outer-spin-button, ::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.results{
+    display: grid;
+    grid-template-rows: max-content max-content;
+    align-content: center;
+}
+.datas{
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+.datas h1, p{
+    font-size: 80px;
+    font-weight: 800;
+    font-style: italic;
+}
+.datas h1{
+    color: #854dff;
+}
+
+@media (min-width: 1440px){
+main{
+    background: white;
+    display: grid;
+    grid-template-rows: max-content;
+    border-radius: 20px 20px 200px 20px;
+    padding: 50px;
+    width: 60%;
+    height: 65%;
+}
+form{
+    display: flex;
+    position: relative;
+    column-gap: 40px;
+    padding-bottom: 30px;
+}
+.campos{
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+}
+button{
+    position: absolute;
+    top: 130px;
+    right: 40px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    background: #854dff;
+}
+button:hover{
+    background: #141414;
+}
+
+hr{
+    height: 1px;
+    width: 90%;
+    background-color: hsl(0, 0%, 86%);
+}
+label{
+    color: hsl(0, 1%, 44%);
+}
+.validate{
+    color: hsl(0, 100%, 67%);
+    font-weight: 100;
+    font-size: 12px;
+}
+.input{
+    height: 70px;
+    width: 155px;
+    padding: 20px 10px;
+    font-size: 30px;
+    border-radius: 8px;
+    border: 1px solid hsl(0, 0%, 86%);
+    color: #141414;
+    font-weight: 800;
+    outline: none;
+}
+.input::-webkit-outer-spin-button, ::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.input:focus{
+    border: 1px solid #854dff;
+}
+.results{
+    display: grid;
+    grid-template-rows: max-content max-content;
+    align-content: center;
+}
+.datas{
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+.datas h1, p{
+    font-size: 110px;
+    font-weight: 800;
+    font-style: italic;
+}
+.datas h1{
+    color: #854dff;
+}
+}
+
+
+@media (max-width: 375px){
+    main{
+        display: grid;
+        grid-template-rows: max-content 40px 2fr;
+        width: 350px;
+        height: 460px;
+        border-radius: 20px 20px 100px 20px;
+        padding: 24px;
+        position: relative;
+    }
+
+    form{
+        display: flex;
+        column-gap: 20px;
+        justify-content: space-around;
+    }
+    .campos{
+        row-gap: 0;
+    }
+    label{
+        font-size: 13px;
+    }
+    .input{
+        width: 80px;
+        font-size: 20px;
+    }
+    .input::placeholder{
+        font-size: 15px;
+    }
+    .results{
+        height: 100%;
+    }
+    .datas p{
+        font-size: 55px;
+    }
+    .datas h1{
+        font-size: 55px;
+    }
+    .datas{
+        height: 60px;
+        column-gap: 10px;
+        justify-content: flex-start;
+    }
+    hr{
+        width: 100%;
+    }
+    button{
+        top: 26%;
+        right: 42%;
+        width: 60px;
+        height: 60px;
+    }
+    button img{
+        width: 40%;
+        height: 40%;
+    }
+}

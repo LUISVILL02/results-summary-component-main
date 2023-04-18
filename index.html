@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+  <main>
+    <form novalidate>
+      <div class="campos">
+        <label class="labelDate"  for="">DAY</label>
+        <input id="day" class="input" type="number" placeholder="DD" required min="1" max="30" step="1">
+        <label class="validate" for=""></label>
+      </div>
+
+      <div class="campos">
+        <label class="labelDate"  for="">MONTH</label>
+        <input id="mounth" class="input" type="number" placeholder="MM" required min="0" max="12" step="1">
+        <label class="validate" for=""></label>
+      </div>
+
+      <div class="campos">
+        <label class="labelDate" for="">YEAR</label>
+        <input id="year" class="input" type="number" placeholder="YYYY" required>
+        <label class="validate" for=""></label>
+      </div>
+
+      <button type="submit"><img src="assets/images/icon-arrow.svg" alt=""></button>
+    </form>
+    <hr>
+    <div class="results">
+      <div class="datas">
+        <h1 class="años">- -</h1>
+        <p>years</p>
+      </div>
+      <div class="datas">
+        <h1 class="meses">--</h1>
+        <p>months</p>
+      </div>
+      <div class="datas">
+        <h1 class="dias">- -</h1>
+        <p>days</p>
+      </div>
+    </div>
+  </main>
+</body>
+<script src="index.js"></script>
+</html>
