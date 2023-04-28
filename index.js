@@ -72,7 +72,7 @@ submit.addEventListener("submit", (e) => {
         labelsValid(2, "", "#dbdbdb", "#716f6f");
         valid3 = true;
     }
-    if(!(fecha.getFullYear() === yearInput.value || fecha.getDate() === dayInput.value || fecha.getMonth() === mountInput.value-1) && dayInput.value.length !== 0 && valid1){
+    if(!(fecha.getFullYear() === yearInput.value || fecha.getDate() === dayInput.value || fecha.getMonth() === mountInput.value-1) && dayInput.value.length !== 0 && valid1 || diferencia < 0){
         valid1 = false;
         labelsValid(0, "Must be a valid date", "#ff5757", "#ff5757");
         inputs.forEach(borders =>{
